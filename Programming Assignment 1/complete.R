@@ -8,7 +8,7 @@ complete <- function(directory, id=1:332){
       ## Filter complete cases
       complete_cases <- complete.cases(file_table);
       file_table     <- file_table[complete_cases,];
-      
+
       ## Append Complete cases
       result<-rbind(result,cbind(file_number,nrow(file_table)))
 
